@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:tabIndicatorColor="@color/color_d81b60"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/color_d81b60"
+        app:tabTextColor="@color/color_666666" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        app:layout_constraintTop_toBottomOf="@id/tab"
+        android:layout_marginTop="@dimen/dp_44"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:scaleType="center"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:src="@drawable/inform_quiz"
+        app:backgroundTint="#00000000"
+        app:borderWidth="0dp"
+        app:elevation="@dimen/dp_0"
+        app:fabCustomSize="@dimen/dp_48"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:maxImageSize="@dimen/dp_48"
+        app:pressedTranslationZ="0dp"
+        app:rippleColor="@color/colorPrimary"
+        app:useCompatPadding="true" />
+</android.support.constraint.ConstraintLayout>

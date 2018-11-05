@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_frg"
+    app:startDestination="@id/main_frg">
+    <fragment android:id="@+id/main_frg"
+        android:name="com.yc.betterlife.mvp.MainFrg"
+        tools:layout="@layout/frg_main"
+        android:label="基页面">
+        <action
+            android:id="@+id/action_main_frg_to_web_frg"
+            app:destination="@id/web_frg" />
+    </fragment>
+
+    <fragment android:id="@+id/web_frg"
+        android:name="com.yc.betterlife.mvp.webfrg.WebFrg"
+        android:label="常用web页"/>
+</navigation>
